@@ -2,9 +2,16 @@
 	import AudioBox from '$lib/components/AudioBox.svelte';
 </script>
 
-<!-- sournd resource: https://mixkit.co/free-sound-effects/ -->
-<!-- wether icons: https://github.com/basmilius/weather-icons -->
-<!-- https://www.reshot.com/free-svg-icons/ -->
+<!-- 
+	Mixkit.com: https://mixkit.co/free-sound-effects/
+	LICENCE: https://mixkit.co/license/
+
+	Wether Icons: https://github.com/basmilius/weather-icons
+	LICENCE: https://github.com/basmilius/weather-icons/blob/dev/LICENSE
+
+	Other Icons: https://www.reshot.com/free-svg-icons/
+	LICENCE: https://www.reshot.com/license/
+-->
 
 <div class="header"><h1 class="header__title">Focus Sounds</h1></div>
 
@@ -30,6 +37,8 @@
 	<AudioBox audioSrc={'meditation.mp3'} imgSrc={'meditation.svg'} />
 </div>
 
+<footer class="footer" />
+
 <style>
 	.header {
 		padding: 1rem;
@@ -46,9 +55,11 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 0 auto;
-		margin-top: 1rem;
-
+		margin: 1rem auto;
 		display: flex;
+	}
+
+	.footer {
+		padding: 1rem;
 	}
 </style>
