@@ -2,6 +2,7 @@
 	export let audioSrc;
 	export let imgSrc;
 
+	let isPlaying = false;
 	let audio;
 	let volumeControl;
 
@@ -9,8 +10,18 @@
 		audio.volume = volumeControl.value / 100;
 	};
 
+	const play = () => {
+		isPlaying = true;
+		audio.play();
+	};
+
+	const pause = () => {
+		isPlaying = false;
+		audio.pause();
+	};
+
 	const toggleAudio = () => {
-		return audio.paused ? audio.play() : audio.pause();
+		return audio.paused ? play() : pause();
 	};
 </script>
 
@@ -24,19 +35,20 @@
 		on:change={changeVolume}
 		type="range"
 		class="volume-control"
+		style={`display: ${isPlaying ? 'block' : 'none'}`}
 	/>
 </div>
 
 <style>
 	.audio-container {
-		border: solid 1px;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
+		margin: 1rem;
 	}
 
 	.wheather-img {
-		width: 150px;
-		height: 150px;
+		width: 100px;
+		height: 100px;
 		display: block;
 		margin: 0 auto;
 		opacity: 0.8;
@@ -52,6 +64,7 @@
 		display: block;
 		width: 80%;
 		margin: 0 auto;
+		margin-top: 1rem;
 		height: 3px;
 		background: #fff;
 		outline: none;
