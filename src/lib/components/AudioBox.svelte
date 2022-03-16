@@ -30,13 +30,15 @@
 <style>
 	.audio-container {
 		border: solid 1px;
-		width: 150px;
+		width: 200px;
 		height: 200px;
 	}
 
 	.wheather-img {
 		width: 150px;
 		height: 150px;
+		display: block;
+		margin: 0 auto;
 		opacity: 0.8;
 		cursor: pointer;
 	}
@@ -47,7 +49,9 @@
 
 	.volume-control {
 		-webkit-appearance: none;
-		width: 100%;
+		display: block;
+		width: 80%;
+		margin: 0 auto;
 		height: 3px;
 		background: #fff;
 		outline: none;
