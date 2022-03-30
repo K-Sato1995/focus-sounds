@@ -16,9 +16,9 @@
 
 <div class="header"><h1 class="header__title">Focus Sounds</h1></div>
 
-<div class="timer-container">
+<!-- <div class="timer-container">
 	<Timer />
-</div>
+</div> -->
 
 <div class="main-container">
 	<AudioBox audioSrc={'light-rain.wav'} imgSrc={'rain.svg'} />
