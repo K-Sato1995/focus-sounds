@@ -42,7 +42,9 @@
 	<AudioBox audioSrc={'meditation.mp3'} imgSrc={'meditation.svg'} />
 </div>
 
-<footer class="footer" />
+<footer class="footer">
+	<a href="https://www.buymeacoffee.com/ksato1995" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+</footer>
 
 <style>
 	.timer-container {
@@ -71,5 +73,6 @@
 
 	.footer {
 		padding: 1rem;
+		text-align: center;
 	}
 </style>
